@@ -6,10 +6,12 @@ public class Done_DestroyByContact : MonoBehaviour
 	public GameObject explosion;
 	public GameObject playerExplosion;
 	public int scoreValue;
+	public int lifeValue;
 	private Done_GameController gameController;
 
 	void Start ()
 	{
+		lifeValue = 2;
 		GameObject gameControllerObject = GameObject.FindGameObjectWithTag ("GameController");
 		if (gameControllerObject != null)
 		{
@@ -17,7 +19,7 @@ public class Done_DestroyByContact : MonoBehaviour
 		}
 		if (gameController == null)
 		{
-			Debug.Log ("Cannot find 'GameController' script");
+			Debug.Log ("O script 'GameController' nao pode ser encontrado");
 		}
 	}
 
@@ -36,11 +38,15 @@ public class Done_DestroyByContact : MonoBehaviour
 		if (other.tag == "Player")
 		{
 			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
-			gameController.GameOver();
+			//gameController.GameOver();
+			gameController.loseLife();
+			if(gameController.getLifeValue() <= 0){gameController.GameOver();}
+
 		}
 		
 		gameController.AddScore(scoreValue);
-		Destroy (other.gameObject);
+		//Destroy (other.gameObject);
 		Destroy (gameObject);
+
 	}
 }

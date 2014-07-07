@@ -11,7 +11,13 @@ Platform assembly: D:\_EAD\SENAC\LEVEL_DESIGN\SpaceInvaderNovo\SpaceinvadersNovo
 Loading D:\_EAD\SENAC\LEVEL_DESIGN\SpaceInvaderNovo\SpaceinvadersNovo_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: D:\_EAD\SENAC\LEVEL_DESIGN\SpaceInvaderNovo\SpaceinvadersNovo_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading D:\_EAD\SENAC\LEVEL_DESIGN\SpaceInvaderNovo\SpaceinvadersNovo_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.056 seconds
+- Completed reload, in  0.049 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+UnloadTime: 0.263274 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 398.
+Total: 0.867019 ms (FindLiveObjects: 0.016956 ms CreateObjectMapping: 0.008032 ms MarkObjects: 0.167781 ms  DeleteObjects: 0.004016 ms)
+

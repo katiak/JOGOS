@@ -11,12 +11,14 @@ public class Done_GameController : MonoBehaviour
 	public float waveWait;
 	
 	public GUIText scoreText;
+	public GUIText lifeText;
 	public GUIText restartText;
 	public GUIText gameOverText;
 	
 	private bool gameOver;
 	private bool restart;
 	private int score;
+	private int life;
 	
 	void Start ()
 	{
@@ -24,8 +26,11 @@ public class Done_GameController : MonoBehaviour
 		restart = false;
 		restartText.text = "";
 		gameOverText.text = "";
+		lifeText.text = "";
 		score = 0;
+		life = 2;
 		UpdateScore ();
+		UpdateLife();
 		StartCoroutine (SpawnWaves ());
 	}
 	
@@ -57,7 +62,7 @@ public class Done_GameController : MonoBehaviour
 			
 			if (gameOver)
 			{
-				restartText.text = "Pressione 'R' para reiniciar. \n A tecla <Ctrl> para atirar!";
+				restartText.text = "Pressione 'R' para reiniciar. \n e a tecla <Ctrl> para atirar!";
 				restart = true;
 				break;
 			}
@@ -74,7 +79,23 @@ public class Done_GameController : MonoBehaviour
 	{
 		scoreText.text = "Pontos: " + score;
 	}
-	
+	public void loseLife ()
+	{
+		life = life - 1;
+		UpdateLife();
+	}
+
+	void UpdateLife ()
+	{
+		lifeText.text = "Vidas: " + life;
+	}
+
+	public int getLifeValue(){
+		return life;
+	}
+
+
+
 	public void GameOver ()
 	{
 		gameOverText.text = "Fim de jogo!";
