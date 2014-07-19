@@ -53,19 +53,19 @@ public class Inicio : MonoBehaviour {
 		
 		if(GUI.Button(new Rect(Screen.width/2 - getLarguraBotao()/2,
 		                       Screen.height/7 - getAlturaBotao()/7, getLarguraBotao(), getAlturaBotao()), "JOGAR")){
-			Application.LoadLevel ("Done_Main");
+			Application.LoadLevel ("Fase1");
 		}
 		if(GUI.Button(new Rect(Screen.width/2 - getLarguraBotao()/2,
-		                       Screen.height/3 - getAlturaBotao()/3, getLarguraBotao(), getAlturaBotao()), "CONFIGURAÇOES")){
-			Application.LoadLevel ("Configuracoes"); 
+		                      175 - getAlturaBotao(), getLarguraBotao(), getAlturaBotao()), "CREDITOS")){
+			Application.LoadLevel ("Creditos"); 
 		}
 		
-		
+	/*
 		if(GUI.Button(new Rect(Screen.width/2 - getLarguraBotao()/2,
 		                       142, getLarguraBotao(), getAlturaBotao()), "CREDITOS")){
 			Application.LoadLevel("Creditos");
 		}
-		
+	*/	
 	}
 	
 }

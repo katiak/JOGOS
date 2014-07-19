@@ -73,6 +73,9 @@ public class Done_GameController : MonoBehaviour
 	{
 		score += newScoreValue;
 		UpdateScore ();
+		if(score >=50) {
+			Application.LoadLevel ("Fase2");
+		}
 	}
 	
 	void UpdateScore ()
