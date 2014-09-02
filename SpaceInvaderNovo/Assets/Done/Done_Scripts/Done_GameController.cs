@@ -73,7 +73,8 @@ public class Done_GameController : MonoBehaviour
 	{
 		score += newScoreValue;
 		UpdateScore ();
-		if(score >=50) {
+		if(score >=300) {
+			restart = true;
 			Application.LoadLevel ("Fase2");
 		}
 	}

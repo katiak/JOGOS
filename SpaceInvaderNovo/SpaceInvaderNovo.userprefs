@@ -1,13 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Done\Done_Scripts\Done_GameController.cs">
     <Files>
-      <File FileName="..\..\PROGRAMACAO_OO\UNITY\labirinto\labirinto\Assets\Creditos.cs" Line="17" Column="59" />
-      <File FileName="Assets\Done\Done_Scripts\Creditos.cs" Line="60" Column="3" />
-      <File FileName="Assets\Done\Done_Scripts\Inicio.cs" Line="60" Column="38" />
-      <File FileName="Assets\Done\Done_Scripts\Done_DestroyByBoundary.cs" Line="1" Column="1" />
       <File FileName="Assets\Done\Done_Scripts\Done_BGScroller.cs" Line="1" Column="1" />
-      <File FileName="Assets\Done\Done_Scripts\Done_GameController.cs" Line="76" Column="10" />
+      <File FileName="Assets\Done\Done_Scripts\Done_DestroyByBoundary.cs" Line="1" Column="1" />
+      <File FileName="Assets\Done\Done_Scripts\Done_DestroyByContact.cs" Line="20" Column="30" />
+      <File FileName="Assets\Done\Done_Scripts\Done_DestroyByTime.cs" Line="1" Column="1" />
+      <File FileName="Assets\Done\Done_Scripts\Done_EvasiveManeuver.cs" Line="46" Column="66" />
+      <File FileName="Assets\Done\Done_Scripts\Done_GameController.cs" Line="80" Column="3" />
+      <File FileName="Assets\Done\Done_Scripts\Done_Mover.cs" Line="10" Column="49" />
+      <File FileName="Assets\Done\Done_Scripts\Done_PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Done\Done_Scripts\Done_RandomRotator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Done\Done_Scripts\Done_WeaponController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
